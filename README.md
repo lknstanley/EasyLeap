@@ -6,3 +6,6 @@ This library is based on [Leap Motion for Unity SDK](https://developer.leapmotio
 ![alt text](/img/easyleap_for_unity_header.png)
 
 [>> Downlaod Unity Package from here <<](https://drive.google.com/file/d/0B-QuZr_n9AXIdXFHWEt5bURMeVU/view?usp=sharing)
+
+# How To Use?
+![alt text](/img/Context_howtouse.png)
