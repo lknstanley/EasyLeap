@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\UI Script\LeapKeys.cs">
+    <Files>
+      <File FileName="Assets\Script\Hand_Controller.cs" Line="62" Column="28" />
+      <File FileName="Assets\Script\UI Script\LeapButton.cs" Line="76" Column="15" />
+      <File FileName="Assets\Script\UIController.cs" Line="89" Column="88" />
+      <File FileName="Assets\Script\UI Script\LeapCursor.cs" Line="69" Column="23" />
+      <File FileName="Assets\Script\UI Script\LeapKeys.cs" Line="74" Column="4" />
+      <File FileName="Assets\Script\UI Script\LeapKeyboard.cs" Line="48" Column="88" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
