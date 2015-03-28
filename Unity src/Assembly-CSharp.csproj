@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{ABB23115-266F-1C05-D242-D26AF947FD35}</ProjectGuid>
+	<ProjectGuid>{9DC8AB73-DDFF-10EB-45AF-2451DCB25655}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -149,14 +149,14 @@
  <HintPath>D:/Software/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
- <HintPath>C:/Users/ASUS/Documents/Plymouth University/Final Year Project/Unity Project/Interim Demo/Assets/Plugins/x86_64/LeapCSharp.NET3.5.dll</HintPath>
+ <HintPath>C:/Users/ASUS/Documents/easyleap_unity/Unity src/Assets/Plugins/x86_64/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{E3F3B5D4-7AD7-F957-6443-280DD2D1ED51}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{A8498A54-1F89-88B1-2D7F-582DDFCF21D7}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{A37AF900-EA22-5E7D-3DFF-BC6D54F0C4EC}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{E34DB053-ECDA-ECBF-7F98-ADF1F76983B5}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{E3F3B5D4-7AD7-F957-6443-280DD2D1ED51}</ProjectGuid>
+	<ProjectGuid>{A8498A54-1F89-88B1-2D7F-582DDFCF21D7}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -66,7 +66,7 @@
  <HintPath>D:/Software/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
- <HintPath>C:/Users/ASUS/Documents/Plymouth University/Final Year Project/Unity Project/Interim Demo/Assets/Plugins/x86_64/LeapCSharp.NET3.5.dll</HintPath>
+ <HintPath>C:/Users/ASUS/Documents/easyleap_unity/Unity src/Assets/Plugins/x86_64/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

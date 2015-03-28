@@ -11,10 +11,10 @@ public class UIController : MonoBehaviour {
 	private CamToObj camScript;
 
 	// UI Component
-	public GameObject panelOn;
+	//public GameObject panelOn;
 	private Button panelBtnOn;
 
-	public GameObject panelOff;
+	//public GameObject panelOff;
 	private Button panelBtnOff;
 	
 	// seperate the function for this script
@@ -47,8 +47,8 @@ public class UIController : MonoBehaviour {
 		camScript = camObj.GetComponent<CamToObj> ();
 
 		// get button script from btn game object
-		panelBtnOn = panelOn.GetComponent<Button> ();
-		panelBtnOff = panelOff.GetComponent<Button> ();
+		//panelBtnOn = panelOn.GetComponent<Button> ();
+		//panelBtnOff = panelOff.GetComponent<Button> ();
 	}
 	
 	// Update is called once per frame
