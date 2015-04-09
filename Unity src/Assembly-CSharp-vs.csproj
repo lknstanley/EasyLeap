@@ -120,9 +120,11 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
-     <Compile Include="Assets\Script\CamLootAt.cs" />
-     <Compile Include="Assets\Script\CamToObj.cs" />
-     <Compile Include="Assets\Script\Hand_Controller.cs" />
+     <Compile Include="Assets\Script\Controller Script\CamLootAt.cs" />
+     <Compile Include="Assets\Script\Controller Script\CamToObj.cs" />
+     <Compile Include="Assets\Script\Controller Script\Hand_Controller.cs" />
+     <Compile Include="Assets\Script\Editor Script\HandControllerEditor.cs" />
+     <Compile Include="Assets\Script\Object Script\GrabObject.cs" />
      <Compile Include="Assets\Script\UI Script\LeapButton.cs" />
      <Compile Include="Assets\Script\UI Script\LeapCursor.cs" />
      <Compile Include="Assets\Script\UI Script\LeapInputField.cs" />
