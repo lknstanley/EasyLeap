@@ -120,6 +120,9 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
+     <Compile Include="Assets\Scence\DemoGame\Demo Component\Script\Billboard.cs" />
+     <Compile Include="Assets\Scence\DemoGame\Demo Component\Script\GameHandler.cs" />
+     <Compile Include="Assets\Scence\DemoGame\Demo Component\Script\UpdateScore.cs" />
      <Compile Include="Assets\Script\Controller Script\CamLootAt.cs" />
      <Compile Include="Assets\Script\Controller Script\CamToObj.cs" />
      <Compile Include="Assets\Script\Controller Script\Hand_Controller.cs" />
@@ -141,8 +144,10 @@
      <None Include="Assets\LeapMotion\DemoResources\ScrollerText.txt" />
      <None Include="Assets\LeapMotion\readme.txt" />
      <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\LeapMotion\Shaders\RimShading.shader" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />

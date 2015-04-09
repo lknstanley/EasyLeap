@@ -25,6 +25,8 @@ public class GrabObject : MonoBehaviour {
 		if(this.gameObject.GetComponent<SpringJoint>() == null) {
 			this.gameObject.AddComponent<SpringJoint> ();
 			this.gameObject.GetComponent<SpringJoint> ().connectedBody = target;
+			this.gameObject.GetComponent<SpringJoint>().autoConfigureConnectedAnchor = false;
+
 		} else {
 			this.gameObject.GetComponent<SpringJoint>().spring = 2.0f;
 		}
@@ -33,6 +35,7 @@ public class GrabObject : MonoBehaviour {
 	public void Release() {
 		if(this.gameObject.GetComponent<SpringJoint>() != null) {
 			this.gameObject.GetComponent<SpringJoint> ().spring = 0.0f;
+			this.gameObject.GetComponent<SpringJoint>().damper = 0.0f;
 		}
 	}
 

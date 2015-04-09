@@ -30,7 +30,7 @@ public class Hand_Controller : MonoBehaviour {
 	private RaycastHit hitObj;
 
 	// One Hands or Two Hands?
-	public bool IsTwoHandsController = false;
+	public bool IsTwoHandsController;
 
 	// Value For User to modify
 	public float RotateOffset = 3;
@@ -70,16 +70,16 @@ public class Hand_Controller : MonoBehaviour {
 				leapFrameCounter++;
 				if(isPlayerController) {
 					if(!IsTwoHandsController) {
-						PlayerThirdPersonController();
+						OneHandController();
 					} else {
-						PlayerFirstPersonController();
+						TwoHandController();
 					}
 				}
 			}
 		}
 	}
 
-	void PlayerThirdPersonController() {
+	void OneHandController() {
 		HandList handList = frame.Hands;
 		Hand right = handList.Rightmost;
 		Hand left = handList.Leftmost;
@@ -108,17 +108,18 @@ public class Hand_Controller : MonoBehaviour {
 		}
 	}
 
-	void PlayerFirstPersonController() {
+	void TwoHandController() {
 		HandList handList = frame.Hands;
 		Hand right = handList.Rightmost;
 		Hand left = handList.Leftmost;
 		
 		FingerList fingerList = frame.Fingers.Extended();
-		
-		
+
+		// Left hand move, right hand triggle event
+
 		Leap.Vector palmNormal;
-		if(right != null) {
-			palmNormal = right.PalmNormal;
+		if(frame.Hands.Count >= 2) {
+			palmNormal = left.PalmNormal;
 			Debug.Log ("Palm Normal: "+palmNormal);
 			if(camObj != null) {
 				//targetObj.rigidbody.AddForce(new Vector3(-palmNormal.x , 0, palmNormal.z ), ForceMode.VelocityChange);
@@ -127,7 +128,7 @@ public class Hand_Controller : MonoBehaviour {
 			}
 
 			if(isInteractWithObjects) {
-				if(fingerList.Count == 0) {
+				if(right.Fingers.Extended().Count == 0) {
 					// Do Event here
 					Debug.Log("Grabbing");
 					CheckObjAndUI();
@@ -139,7 +140,7 @@ public class Hand_Controller : MonoBehaviour {
 		}
 	}
 
-	void CheckObjAndUI() {
+	public void CheckObjAndUI() {
 		Vector3 direction = PlayerObject.transform.TransformDirection (Vector3.forward);
 		if(Physics.Raycast(PlayerObject.transform.position, direction, out hitObj, 100.0f)) {
 			GameObject hit = hitObj.transform.gameObject;
@@ -151,7 +152,7 @@ public class Hand_Controller : MonoBehaviour {
 		}
 	}
 
-	void ReleaseObject() {
+	public void ReleaseObject() {
 		if(tempHit != null && countGrab == 1) {
 			tempHit.GetComponent<GrabObject> ().Release ();
 			countGrab --;

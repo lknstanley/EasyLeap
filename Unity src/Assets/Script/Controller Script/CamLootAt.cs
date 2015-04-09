@@ -12,7 +12,6 @@ public class CamLootAt : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//gameObject.transform.position = new Vector3 (targetObj.transform.position.x, targetObj.transform.position.y, targetObj.transform.position.z - 5);
-		gameObject.transform.LookAt (targetObj.transform);
+		gameObject.transform.LookAt (targetObj.transform.position);
 	}
 }
