@@ -7,6 +7,7 @@ public class HandControllerEditor : Editor
 {
 	public override void OnInspectorGUI()
 	{
+		/*
 		Hand_Controller myScript = (Hand_Controller)target;
 
 		EditorGUILayout.HelpBox ("Basic GameObject Seup", MessageType.Info);
@@ -27,5 +28,11 @@ public class HandControllerEditor : Editor
 
 		EditorGUILayout.HelpBox ("Activate the interaction with Leap Object / Leap GUI", MessageType.Info);
 		myScript.isInteractWithObjects = EditorGUILayout.Toggle ("Interact With Object", myScript.isInteractWithObjects);
+		if(myScript.isInteractWithObjects) {
+			EditorGUILayout.HelpBox ("Minimum Distance of interaction with Leap Object", MessageType.Info);
+			myScript.InteractDistance = EditorGUILayout.FloatField ("Interaction Distance", myScript.InteractDistance);
+		}
+		*/
+		DrawDefaultInspector ();
 	}
 }

@@ -41,6 +41,7 @@ public class Hand_Controller : MonoBehaviour {
 
 	// Count Grab objects
 	int countGrab = 0;
+	public float InteractDistance = 100.0f;
 
 	// Bool interact with object?
 	public bool isInteractWithObjects = false;
@@ -142,7 +143,7 @@ public class Hand_Controller : MonoBehaviour {
 
 	public void CheckObjAndUI() {
 		Vector3 direction = PlayerObject.transform.TransformDirection (Vector3.forward);
-		if(Physics.Raycast(PlayerObject.transform.position, direction, out hitObj, 100.0f)) {
+		if(Physics.Raycast(PlayerObject.transform.position, direction, out hitObj, InteractDistance)) {
 			GameObject hit = hitObj.transform.gameObject;
 			if(hit.transform.gameObject.tag == "LeapGrabObject" && countGrab == 0) {
 				tempHit = hit;
