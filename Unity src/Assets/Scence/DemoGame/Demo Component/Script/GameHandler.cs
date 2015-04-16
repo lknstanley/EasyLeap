@@ -38,4 +38,8 @@ public class GameHandler : MonoBehaviour {
 		//Instantiate (GrabbableObject, position, Quaternion.identity);
 	}
 
+	public void ReloadGame() {
+		Application.LoadLevel ("Demo");
+	}
+
 }

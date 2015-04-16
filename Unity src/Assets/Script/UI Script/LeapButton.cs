@@ -65,6 +65,7 @@ public class LeapButton : MonoBehaviour {
 			other.GetComponent<LeapCursor>().StartLoadingBar(countTime, count);
 			if(count == 0) {
 				this.gameObject.GetComponent<Button>().onClick.Invoke();
+				other.GetComponent<LeapCursor>().ResetLoadingBar();
 			}
 		}
 	}
