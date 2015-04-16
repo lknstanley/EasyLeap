@@ -1,4 +1,4 @@
-#![](/img/Title.png)
+#!(/img/Title.png)
 Welcome to use Easy Leap for Unity.
 
 This library is based on [Leap Motion for Unity SDK](https://developer.leapmotion.com/downloads/unity) to develop a default component for developer to apply Leap Motion into their product.
