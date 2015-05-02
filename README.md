@@ -1,4 +1,4 @@
-![](/img/icon.png)
+![](/img/icon.png =100x100)
 #![](/img/Title.png)
 Welcome to use Easy Leap for Unity.
 
